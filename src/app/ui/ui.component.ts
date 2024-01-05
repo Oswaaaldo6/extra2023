@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Formula } from '../formula/formula.component';
 
 @Component({
   selector: 'app-ui',
@@ -16,9 +17,8 @@ export class UiComponent {
   public resultado: number = 0;
 
   getFormula(): number {
-    let resultado = (this.altura * this.base) / 2;
-    this.resultado = resultado;
-    return resultado;
+    this.resultado = Formula(this.altura, this.base);
+    return this.resultado;
   }
 
   Actualizar_altura(event: Event): void {
