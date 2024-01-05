@@ -11,10 +11,10 @@
     <div class="opciones_Botones">
 
       <label for="">Ingrese el valor de la altura </label>
-      <input (input)="Actualizar_altura($event)" [value]="altura" type="number" placeholder="Valor de x0" required name="Input-x0" />
+      <input (input)="Actualizar_altura($event)" [value]="altura" type="number" placeholder="Valor de x0" required name="Input-x0" id="operator1" class="operator1" name="operator1" />
 
       <label for="">Ingrese el valor de la base: </label>
-      <input (input)="Actualizar_base($event)" [value]="base" type="number" placeholder="Valor de x1" required name="Input-x1" />
+      <input (input)="Actualizar_base($event)" [value]="base" type="number" placeholder="Valor de x1" required name="Input-x1" id="operator2" class="operator2" name="operator2" />
 
       <button class="ObtenerResultado" (click)="getFormula()">Calcular Resultado</button>
 
@@ -28,7 +28,7 @@
       </div>
 
       <div class="opcion_Resultado">
-        <p style="color: black; font-size: 120%;">Resultado <span style="color: red"> {{resultado}}</span>  </p>
+        <p class="Resultado" style="color: black; font-size: 120%;">Resultado <span style="color: red"> {{resultado}}</span>  </p>
       </div>
 
     </div>
